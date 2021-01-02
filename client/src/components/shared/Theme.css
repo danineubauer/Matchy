@@ -1,13 +1,9 @@
-body,
-html {
-  margin: 0;
-  height: 100%;
-}
-
 :root {
   --primary-color: "#49868C";
   --secondary-color: "#A0D9D9";
   --tertiary-color: "#A62D2D";
   --quaternary-color: "#BF9969";
-  --background-color: "#D9B166";
+  --background-color: "#fad083";
+  background: url("../../assets/background.jpg") no-repeat;
+  background-size: 150% 150%;
 }
