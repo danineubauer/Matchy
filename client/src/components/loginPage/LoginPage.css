@@ -8,7 +8,7 @@
 
 .login-popup-container {
   height: 30rem;
-  width: 600px;
+  width: 450px;
   border: none;
   box-shadow: 1px 2px 3px rgb(131, 153, 166);
   background-color: white;
@@ -19,16 +19,14 @@
   justify-content: center;
 }
 
-.login-header {
-  color: #ffffff;
+.login-headers {
+  color: #6a8e96;
   font-size: 20px;
-  text-decoration: underline;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  text-shadow: 1px 2px 3px rgb(131, 153, 166);
 }
 
-.log-in-button {
+.login-button {
   height: 50px;
   padding: 14px 32px;
   border-radius: 2em;
@@ -41,7 +39,7 @@
   font-weight: bold;
 }
 
-.homepage-main-button:hover {
+.login-button:hover {
   background-color: rgb(236, 234, 234);
   color: rgb(80, 70, 69);
   box-shadow: 1px 2px 3px rgb(99, 115, 124);
