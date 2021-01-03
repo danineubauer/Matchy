@@ -1,5 +1,4 @@
 import React from "react";
-import "../shared/Theme.css";
 import "./SearchPage.css";
 
 export const SearchPage = () => {

@@ -1,5 +1,4 @@
 import React from "react";
-import "../shared/Theme.css";
 import "./ProfilePage.css";
 
 export const ProfilePage = () => {

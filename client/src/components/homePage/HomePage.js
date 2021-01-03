@@ -1,5 +1,4 @@
 import React from "react";
-import "../shared/Theme.css";
 import "./HomePage.css";
 
 export const HomePage = () => {

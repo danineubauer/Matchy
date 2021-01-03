@@ -13,7 +13,7 @@ import { SearchPage } from "./components/searchPage/SearchPage";
 import { Header } from "./components/shared/header/Header";
 
 import "./App.css";
-// import { Header } from "./components/shared/header/Header";
+import "./theme.css";
 
 function App() {
   return (
@@ -21,18 +21,8 @@ function App() {
       <div className="App">
         <Header />
 
-        {/* 
-        <Link to="/homePage">
-          <h1>Home</h1>
-        </Link>
-        <Link to="/loginPage">
-          <h1>login</h1>
-        </Link>
-        <Link to="/profilePage">profilePage</Link>
-        <Link to="/searchPage">searchPage</Link> */}
-
-        {/* <Switch>
-          <Route path="/homePage">
+        <Switch>
+          <Route path="/" exact>
             <HomePage />
           </Route>
           <Route path="/loginPage">
@@ -44,11 +34,7 @@ function App() {
           <Route path="/searchPage">
             <SearchPage />
           </Route>
-        </Switch> */}
-        {/* <HomePage /> */}
-        <LoginPage />
-        {/* <ProfilePage />
-      <SearchPage /> */}
+        </Switch>
       </div>
     </Router>
   );

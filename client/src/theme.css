@@ -1,0 +1,15 @@
+:root {
+  --white: #f5f5f5;
+  --primary-color: #49868C;
+  --secondary-color: #A0D9D9;
+  --tertiary-color: #A62D2D;
+  --quaternary-color: #BF9969;
+  --background-color: #fad083;
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: 150% 150%;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
