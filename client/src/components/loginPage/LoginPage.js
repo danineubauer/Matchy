@@ -24,39 +24,48 @@ export const LoginPage = () => {
             Sign up
           </h2>
 
-          {displaySignupPage ? (
-            <h2>
-              <form>
-                <label>
-                  Name:
-                  <input type="text" name="name" />
-                </label>
-                <label>
-                  Last Name:
-                  <input type="text" name="last-name" />
-                </label>
-                <label>
-                  Email:
-                  <input type="text" name="email" />
-                </label>
-                <label>
-                  Password:
-                  <input type="text" name="password" />
-                </label>
-                <label>
-                  Repeat Password:
-                  <input type="text" name="repeat-password" />
-                </label>
+          {displayLoginPage ? (
+            <form>
+              <label>
+                Email:
+                <input type="text" name="email" />
+              </label>
+              <label>
+                Password:
                 <input className="login-button" type="submit" value="submit" />
-              </form>
-            </h2>
+              </label>
+            </form>
           ) : (
             <p></p>
           )}
-          {displayLoginPage ? <h2></h2> : <p></p>}
 
-          <button className="login-button signup-button">Sign up</button>
-          <button className="login-button">Log in</button>
+          {displaySignupPage ? (
+            <form>
+              <label>
+                Name:
+                <input type="text" name="name" />
+              </label>
+              <label>
+                Last Name:
+                <input type="text" name="last-name" />
+              </label>
+              <label>
+                Email:
+                <input type="text" name="email" />
+              </label>
+              <label>
+                Password:
+                <input type="text" name="password" />
+              </label>
+              <label>
+                Repeat Password:
+                <input type="text" name="repeat-password" />
+              </label>
+              <input className="login-button" type="submit" value="submit" />
+            </form>
+          ) : (
+            <p></p>
+          )}
           <h4>Forgot username / password?</h4>
         </div>
       </div>
