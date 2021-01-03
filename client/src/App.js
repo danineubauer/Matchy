@@ -31,7 +31,7 @@ function App() {
         <Link to="/profilePage">profilePage</Link>
         <Link to="/searchPage">searchPage</Link> */}
 
-        <Switch>
+        {/* <Switch>
           <Route path="/homePage">
             <HomePage />
           </Route>
@@ -44,9 +44,9 @@ function App() {
           <Route path="/searchPage">
             <SearchPage />
           </Route>
-        </Switch>
+        </Switch> */}
         {/* <HomePage /> */}
-        {/* <LoginPage /> */}
+        <LoginPage />
         {/* <ProfilePage />
       <SearchPage /> */}
       </div>
