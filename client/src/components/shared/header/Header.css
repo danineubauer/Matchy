@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #49868c;
+  background-color: #698e96;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
@@ -13,8 +13,27 @@
 }
 
 .profile-image {
-  width: 30px;
+  width: 60px;
   height: 30px;
-  border: 1px solid black;
-  border-radius: 100%;
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+.header-buttons {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: rgb(243, 243, 237);
+  text-shadow: rgb(105, 105, 105);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 550;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  transition: all 0.2s;
+  outline: none;
+}
+.header-buttons:hover {
+  color: rgb(218, 205, 33);
+  text-shadow: 0.2px 0.5px 1px rgb(63, 63, 63);
+  cursor: pointer;
 }

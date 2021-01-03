@@ -7,3 +7,8 @@
   background: url("../../assets/background.jpg") no-repeat;
   background-size: 150% 150%;
 }
+
+button {
+  outline: none;
+  cursor: pointer;
+}
