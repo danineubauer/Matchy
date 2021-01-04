@@ -28,8 +28,8 @@ export const SearchPage = () => {
             </div>
           </div>
           <div className="nav-buttons-container">
-            <button className="nav-button">✅</button>
             <button className="nav-button">❌</button>
+            <button className="nav-button">✅</button>
           </div>
         </div>
       </div>

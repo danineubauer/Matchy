@@ -38,7 +38,7 @@ export const LoginPage = () => {
           {displayForm === FORMS.LOGIN && <LoginForm />}
           {displayForm === FORMS.SIGNUP && <SignupForm />}
 
-          <h4>Forgot username / password?</h4>
+          <p>Forgot username / password?</p>
         </div>
       </div>
     </div>
