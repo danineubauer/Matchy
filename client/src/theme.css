@@ -1,9 +1,9 @@
 :root {
   --white: #f5f5f5;
-  --primary-color: #49868C;
-  --secondary-color: #A0D9D9;
-  --tertiary-color: #A62D2D;
-  --quaternary-color: #BF9969;
+  --primary-color: #49868c;
+  --secondary-color: #a0d9d9;
+  --tertiary-color: #a62d2d;
+  --quaternary-color: #bf9969;
   --background-color: #fad083;
   background: url("./assets/background.jpg") no-repeat;
   background-size: 150% 150%;
@@ -12,4 +12,23 @@
 button {
   outline: none;
   cursor: pointer;
+}
+
+button {
+  height: 50px;
+  padding: 14px 32px;
+  border-radius: 2em;
+  transition: all 0.2s;
+  border: none;
+  box-shadow: 1px 2px 3px rgb(131, 153, 166);
+  cursor: pointer;
+  color: rgb(119, 105, 103);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(236, 234, 234);
+  color: rgb(80, 70, 69);
+  box-shadow: 1px 2px 3px rgb(99, 115, 124);
 }

@@ -4,14 +4,26 @@ import "./SearchPage.css";
 export const SearchPage = () => {
   return (
     <div>
-      <div className="login-main-container">
-        <div className="login-popup-container">
-          <h2 className="login-headers login-header">Log in / Sign up</h2>
-          {/* <h2 className="login-headers signup-header">Sign up</h2> */}
-          <input></input>
-          <button className="login-button">Log in</button>
-          <button className="login-button signup-button">Sign up</button>
-          <h4>Forgot username / password?</h4>
+      <div className="searchpage-main-container">
+        <div className="searchpage-popup-container">
+          <h2 className="searchpage-header">Search people</h2>
+          <div className="searchpage-content-container">
+            <div className=".searchpage-photo-container">
+              <h2>Jenifer</h2>
+              <img src="../../assets/background.jpg"></img>
+            </div>
+
+            <div className="searchpage-information-container">
+              <p>age:</p>
+              <p>location:</p>
+              <p>looking to meet:</p>
+              <p>hobbies:</p>
+            </div>
+          </div>
+          <div className="nav-buttons-container">
+            <button className="nav-button">✅</button>
+            <button className="nav-button">❌</button>
+          </div>
         </div>
       </div>
     </div>

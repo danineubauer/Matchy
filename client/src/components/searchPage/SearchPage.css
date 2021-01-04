@@ -1,4 +1,4 @@
-.login-main-container {
+.searchpage-main-container {
   height: 50rem;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.login-popup-container {
+.searchpage-popup-container {
   height: 30rem;
   width: 450px;
   border: none;
@@ -19,36 +19,23 @@
   justify-content: center;
 }
 
-.login-headers {
+.searchpage-content-container {
+  display: flex;
+  flex-direction: row;
+}
+.searchpage-photo-container {
+  background-color: #6a8e96;
+}
+.searchpage-information-container {
+  background-color: #6a8e96;
+}
+.searchpage-header {
   color: #6a8e96;
   font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
-.login-button {
-  height: 50px;
-  padding: 14px 32px;
-  border-radius: 2em;
-  transition: all 0.2s;
-  border: none;
-  box-shadow: 1px 2px 3px rgb(131, 153, 166);
-  cursor: pointer;
-  color: rgb(119, 105, 103);
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
-
-.login-button:hover {
-  background-color: rgb(236, 234, 234);
-  color: rgb(80, 70, 69);
-  box-shadow: 1px 2px 3px rgb(99, 115, 124);
-}
-
-.homepage-hearts {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: -50px;
-  font-size: 20px;
+.nav-button {
+  margin: 10px;
 }
