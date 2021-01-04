@@ -4,13 +4,17 @@ import "./ProfilePage.css";
 export const ProfilePage = () => {
   return (
     <div>
-      <div className="login-main-container">
-        <div className="login-popup-container">
-          <h2 className="login-headers login-header">Log in / Sign up</h2>
+      <div className="profilepage-main-container">
+        <div className="profilepage-popup-container">
+          <h2 className="profilepage-headers profilepage-header">
+            Profile Page
+          </h2>
+
           {/* <h2 className="login-headers signup-header">Sign up</h2> */}
-          <input></input>
-          <button className="login-button">Log in</button>
-          <button className="login-button signup-button">Sign up</button>
+          <button className="profilepage-button">Log in</button>
+          <button className="profilepage-button profilepage-button">
+            Profile Page
+          </button>
           <h4>Forgot username / password?</h4>
         </div>
       </div>

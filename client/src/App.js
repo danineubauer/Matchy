@@ -29,7 +29,7 @@ function App() {
             <LoginPage />
           </Route>
           <Route path="/profilePage">
-            <profilePage />
+            <ProfilePage />
           </Route>
           <Route path="/searchPage">
             <SearchPage />
