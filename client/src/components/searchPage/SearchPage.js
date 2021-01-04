@@ -1,4 +1,5 @@
 import React from "react";
+import profilePicture from "../../assets/gal_gadot.jpg";
 import "./SearchPage.css";
 
 export const SearchPage = () => {
@@ -6,17 +7,23 @@ export const SearchPage = () => {
     <div>
       <div className="searchpage-main-container">
         <div className="searchpage-popup-container">
-          <h2 className="searchpage-header">Search people</h2>
+          <h2 className="searchpage-header">Find your Matchy</h2>
           <div className="searchpage-content-container">
-            <div className=".searchpage-photo-container">
-              <h2>Jenifer</h2>
-              <img src="../../assets/background.jpg"></img>
+            <div className="searchpage-photo-container">
+              <img
+                className="searchpage-photo"
+                src={profilePicture}
+                alt="Profile picture"
+                width="200px"
+                height="200px"
+              />
             </div>
 
             <div className="searchpage-information-container">
+              <h2 className="searchpage-profile-name">Gal Gadot</h2>
               <p>age:</p>
               <p>location:</p>
-              <p>looking to meet:</p>
+              <p>interested in:</p>
               <p>hobbies:</p>
             </div>
           </div>

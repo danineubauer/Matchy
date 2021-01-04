@@ -7,8 +7,8 @@
 }
 
 .searchpage-popup-container {
-  height: 30rem;
-  width: 450px;
+  height: 37rem;
+  width: 550px;
   border: none;
   box-shadow: 1px 2px 3px rgb(131, 153, 166);
   background-color: white;
@@ -19,15 +19,29 @@
   justify-content: center;
 }
 
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(119, 105, 103);
+}
 .searchpage-content-container {
   display: flex;
   flex-direction: row;
+  box-shadow: 1px 2px 3px rgb(131, 153, 166);
+  border-radius: 4%;
+  padding: 40px;
+  margin: 20px;
+  background-color: rgb(248, 247, 247);
 }
+
 .searchpage-photo-container {
-  background-color: #6a8e96;
+  height: 200px;
+  width: 200px;
+  box-shadow: 1px 2px 3px rgb(131, 153, 166);
+  align-self: center;
 }
+
 .searchpage-information-container {
-  background-color: #6a8e96;
+  padding: 30px;
 }
 .searchpage-header {
   color: #6a8e96;
@@ -35,7 +49,11 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
+.searchpage-profile-name {
+  color: rgb(119, 105, 103);
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
 .nav-button {
   margin: 10px;
 }
