@@ -1,11 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from "./components/homePage/HomePage";
 import { LoginPage } from "./components/loginPage/LoginPage";
 import { ProfilePage } from "./components/profilePage/ProfilePage";

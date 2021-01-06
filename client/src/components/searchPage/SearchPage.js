@@ -13,7 +13,7 @@ export const SearchPage = () => {
               <img
                 className="searchpage-photo"
                 src={profilePicture}
-                alt="Profile picture"
+                alt="Profile"
                 width="200px"
                 height="200px"
               />

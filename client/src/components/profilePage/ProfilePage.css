@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-.profilepage-headers {
+.profilepage-header {
   color: #6a8e96;
   font-size: 14px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -29,6 +29,12 @@
   flex-direction: row;
 }
 
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(119, 105, 103);
+  font-weight: bold;
+  font-size: 12px;
+}
 .profilepage-button {
   height: 50px;
   padding: 14px 32px;
@@ -48,4 +54,15 @@
   background-color: rgb(236, 234, 234);
   color: rgb(80, 70, 69);
   box-shadow: 1px 2px 3px rgb(99, 115, 124);
+}
+
+.profilepage-profilephoto-container {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: #6a8e96 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
