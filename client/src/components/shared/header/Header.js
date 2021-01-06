@@ -20,7 +20,9 @@ export const Header = () => {
         <Link to="profilePage" className="header-buttons profile-page-button">
           Profile page
         </Link>
-        <Link to="loginPage" className="header-buttons login-button">Log in</Link>
+        <Link to="loginPage" className="header-buttons login-button">
+          Log in
+        </Link>
       </div>
     </header>
   );
