@@ -15,7 +15,11 @@ export const ProfilePage = () => {
 
           <div className="profilepage-profilephoto-container">
             <p>click to upload photo</p>
-            <input type="file" onChange={fileSelectedHandler}></input>
+            <input
+              type="file"
+              className="profilepage-fileselecthandler"
+              onChange={fileSelectedHandler}
+            ></input>
           </div>
 
           {/* <h2 className="login-headers signup-header">Sign up</h2> */}

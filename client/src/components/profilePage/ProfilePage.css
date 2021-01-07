@@ -66,3 +66,23 @@ p {
   justify-content: center;
   flex-direction: column;
 }
+.profilepage-fileselecthandler label {
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+}
+.profilepage-fileselecthandler::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.profilepage-fileselecthandler::-webkit-input-placeholder {
+  visibility: hidden;
+}
+.profilepage-fileselecthandler::before {
+  content: "select profile photo";
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  border: none;
+  background-color: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
