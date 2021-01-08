@@ -35,45 +35,19 @@ p {
   font-weight: bold;
   font-size: 12px;
 }
-.profilepage-button {
-  height: 50px;
-  padding: 14px 32px;
-  margin: 20px 0px;
-  border-radius: 2em;
-  transition: all 0.2s;
-  border: none;
-  box-shadow: 1px 2px 3px rgb(131, 153, 166);
-  cursor: pointer;
-  color: rgb(119, 105, 103);
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  outline: none;
-}
-
-.profilepage-button:hover {
-  background-color: rgb(236, 234, 234);
-  color: rgb(80, 70, 69);
-  box-shadow: 1px 2px 3px rgb(99, 115, 124);
-}
-
-.profilepage-profilephoto-container {
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
-  border: #6a8e96 solid 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
 .btn-select-photo {
+  cursor: pointer;
+}
+
+.profile-photo-container {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  cursor: pointer;
-  margin-bottom: "20px";
+}
+
+.gender-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  width: 200px;
 }
