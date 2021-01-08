@@ -14,20 +14,23 @@ export const ProfilePage = () => {
           <p>please edit your profile to start finding your match!</p>
 
           <div className="profilepage-profilephoto-container">
-            <p>click to upload photo</p>
             <input
               type="file"
-              className="profilepage-fileselecthandler"
+              id="select-photo"
+              accept="image/*"
+              name="select-photo"
               onChange={fileSelectedHandler}
-            ></input>
+              hidden
+            />
+            <label
+              className="btn-select-photo"
+              for="select-photo"
+              role="button"
+            >
+              select photo
+            </label>
+            <div className="photo-preview-box"></div>
           </div>
-
-          {/* <h2 className="login-headers signup-header">Sign up</h2> */}
-          {/* <button className="profilepage-button">Log in</button>
-          <button className="profilepage-button profilepage-button">
-            Profile Page
-          </button>
-          <h4>Forgot username / password?</h4> */}
         </div>
       </div>
     </div>
