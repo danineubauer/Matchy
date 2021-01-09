@@ -28,7 +28,26 @@ export const ProfilePage = () => {
           <label className="btn-select-photo" for="select-photo" role="button">
             select photo
           </label>
-          <p>I am:</p>
+
+          <div>
+            <label for="location-input"></label>
+
+            <input type="text" id="location-input" placeholder="City"></input>
+          </div>
+
+          <div>
+            <label for="hobbies"></label>
+            <input
+              type="text"
+              id="hobbies"
+              placeholder="Favorite hobby"
+            ></input>
+          </div>
+          <div>
+            <label for="hobbies"></label>
+            <input type="text" id="hobbies" placeholder="favorite food"></input>
+          </div>
+          <label>I am:</label>
           <div className="gender-container">
             <input type="checkbox" id="male" name="male" />
             <label for="male">Male</label>
@@ -37,7 +56,7 @@ export const ProfilePage = () => {
             <input type="checkbox" id="other" name="other" />
             <label for="other">other</label>
           </div>
-          <p>Looking to meet:</p>
+          <label>Looking to meet:</label>
           <div className="gender-container">
             <input type="checkbox" id="male" name="male" />
             <label for="male">Male</label>
@@ -47,20 +66,10 @@ export const ProfilePage = () => {
             <label for="other">other</label>
           </div>
           <div className="birthday">
-            <label for="birthdate">My birthday is on:</label>
+            <label for="birthdate">Bday:</label>
             <input type="date"></input>
           </div>
-          <div className="favorite-color">
-            <input label="favorite color" type="color"></input>
-          </div>
-          <div>
-            <label for="hobbies">What's your favorite hobby?</label>
-            <input type="text" id="hobbies"></input>
-          </div>
-          <div>
-            <label for="hobbies">What's your favorite food?</label>
-            <input type="text" id="hobbies"></input>
-          </div>
+
           <button className="profilepage-button">Finalize profile</button>
         </div>
       </div>

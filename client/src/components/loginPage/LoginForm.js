@@ -4,12 +4,10 @@ export const LoginForm = () => {
   return (
     <form>
       <label>
-        Email:
-        <input type="text" name="email" />
+        <input type="text" name="email" placeholder="Email" />
       </label>
       <label>
-        Password:
-        <input type="text" name="password" />
+        <input type="password" name="password" placeholder="Password" />
       </label>
       <label>
         <input className="login-button" type="submit" value="submit" />

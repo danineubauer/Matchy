@@ -1,27 +1,26 @@
-import React from 'react';
+import React from "react";
 
-export const SignupForm = () => { 
+export const SignupForm = () => {
   return (
     <form>
       <label>
-        Name:
-        <input type="text" name="name" />
+        <input type="text" name="name" placeholder="First name" />
       </label>
       <label>
-        Last Name:
-        <input type="text" name="last-name" />
+        <input type="text" name="last-name" placeholder="Last name" />
       </label>
       <label>
-        Email:
-        <input type="text" name="email" />
+        <input type="text" name="email" placeholder="Email" />
       </label>
       <label>
-        Password:
-        <input type="text" name="password" />
+        <input type="password" name="password" placeholder="Password" />
       </label>
       <label>
-        Repeat Password:
-        <input type="text" name="repeat-password" />
+        <input
+          type="password"
+          name="repeat-password"
+          placeholder="Repeat password"
+        />
       </label>
       <input className="login-button" type="submit" value="submit" />
     </form>
