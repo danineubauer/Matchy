@@ -1,8 +1,18 @@
 import React from "react";
 import profilePicture from "../../assets/gal_gadot.jpg";
+import { callApi } from "../../mock/fakeServer";
 import "./SearchPage.css";
 
 export const SearchPage = () => {
+  const onClickSearch = async () => { 
+    try {
+      const result = await callApi();
+      alert(result);
+    } catch (e) { 
+      alert('error!');
+    }
+  };
+
   return (
     <div>
       <div className="searchpage-main-container">
@@ -29,7 +39,7 @@ export const SearchPage = () => {
           </div>
           <div className="nav-buttons-container">
             <button className="nav-button">❌</button>
-            <button className="nav-button">✅</button>
+            <button className="nav-button" onClick={onClickSearch}>✅</button>
           </div>
         </div>
       </div>
