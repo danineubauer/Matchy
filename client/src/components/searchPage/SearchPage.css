@@ -59,3 +59,17 @@ p {
 .nav-button {
   margin: 10px;
 }
+
+@media screen and (max-width: 550px) {
+  .searchpage-content-container {
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .searchpage-popup-container {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+}

@@ -51,3 +51,11 @@ p {
   flex-direction: row;
   width: 200px;
 }
+
+@media screen and (max-width: 550px) {
+  .profilepage-popup-container {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+}
