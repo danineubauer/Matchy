@@ -19,12 +19,6 @@
   padding-left: 30px;
 }
 
-@media screen and (max-width: 550px) {
-  .buttons {
-    display: none;
-  }
-}
-
 .header-buttons {
   padding: 10px 20px;
   font-size: 15px;
@@ -42,4 +36,13 @@
   color: rgb(218, 205, 33);
   text-shadow: 0.2px 0.5px 1px rgb(63, 63, 63);
   cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .buttons {
+    display: none;
+  }
+  .header-buttons {
+    display: none;
+  }
 }

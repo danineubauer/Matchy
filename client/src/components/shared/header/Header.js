@@ -1,10 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-// import { LoginPage } from "../../loginPage/LoginPage";
-// import { HomePage } from "../../homePage/HomePage";
-// import { ProfilePage } from "../../profilePage/ProfilePage";
-// import { SearchPage } from "../../searchPage/SearchPage";
 import "./Header.css";
 
 export const Header = () => {
