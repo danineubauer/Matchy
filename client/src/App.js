@@ -7,7 +7,7 @@ import { Header } from "./components/shared/header/Header";
 
 import "./App.css";
 import "./theme.css";
-import { HamburgerMenu } from "./components/hamburgerMenu/HamburgerMenu";
+import { HamburgerToggler } from "./components/hamburgerMenuToggler/HamburgerMenu";
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <HamburgerMenu />
+      <HamburgerToggler />
     </Router>
   );
 }
