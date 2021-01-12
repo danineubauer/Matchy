@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HamburgerToggler.css";
+import "./HamburgerMenu.css";
 
-export const HamburgerToggler = () => {
+export const HamburgerMenu = () => {
   return (
     <button className="btn-hamburger">
       <div className="menu-wrap">

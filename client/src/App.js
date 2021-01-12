@@ -4,10 +4,9 @@ import { LoginPage } from "./components/loginPage/LoginPage";
 import { ProfilePage } from "./components/profilePage/ProfilePage";
 import { SearchPage } from "./components/searchPage/SearchPage";
 import { Header } from "./components/shared/header/Header";
-
 import "./App.css";
 import "./theme.css";
-import { HamburgerToggler } from "./components/hamburgerMenuToggler/HamburgerMenu";
+import { HamburgerMenu } from "./components/hamburgerMenu/HamburgerMenu";
 
 function App() {
   return (
@@ -30,7 +29,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <HamburgerToggler />
+      <HamburgerMenu />
     </Router>
   );
 }
