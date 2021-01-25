@@ -1,0 +1,59 @@
+{
+    "users": 
+    [
+        {
+        "id": "1",
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "johndoe@abc.com",
+        "gender": "Male",
+        "city": "San Francisco",
+        "hobby": "surfing",
+        "food": "sushi",
+        "interested-to-date": "female",
+        "birthday": "05/05/1990",
+        "photo": "",
+        },
+    {
+        "id": "2",
+        "first_name": "Brad",
+        "last_name": "Pit",
+        "email": "johndoe@abc.com",
+        "gender": "Male",
+        "city": "San Francisco",
+        "hobby": "sailing",
+        "food": "pizza",
+        "interested-to-date": "female",
+        "birthday": "05/05/1990",
+        "photo": ""
+    },
+    {
+        "id": "3",
+        "first_name": "Oprah",
+        "last_name": "Winfrey",
+        "email": "oprahwinfey@abc.com",
+        "gender": "Female",
+        "city": "Chicago",
+        "hobby": "hiking",
+        "food": "italian",
+        "interested-to-date": "male",
+        "birthday": "05/05/1990",
+        "photo": ""
+    },
+    {
+        "id": "4",
+        "first_name": "Hailey",
+        "last_name": "Bieber",
+        "email": "haileybieber@abc.com",
+        "gender": "Female",
+        "city": "LA",
+        "hobby": "camping",
+        "food": "pasta",
+        "interested-to-date": "female",
+        "birthday": "05/05/1990",
+        "photo": ""
+    },
+    ]
+}
+
+
