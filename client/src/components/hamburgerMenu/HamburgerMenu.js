@@ -1,12 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./HamburgerMenu.css";
 
 export const HamburgerMenu = () => {
+  const location = useLocation();
+  const [checked, setChecked] = React.useState(false);
+
+  React.useEffect(() => { 
+    setChecked(false);
+  }, [location]);
+
   return (
-    <button className="btn-hamburger">
+    <button className="btn-hamburger" onClick={() => setChecked(!checked)}>
       <div className="menu-wrap">
-        <input className="hamburger-toggler" type="checkbox"></input>
+        <input className="hamburger-toggler" type="checkbox" checked={checked}></input>
         <div className="hamburger">
           <div></div>
         </div>
