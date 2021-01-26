@@ -78,7 +78,7 @@
 
 .menu-wrap .hamburger-toggler:checked:hover + .hamburger > div {
   transform: rotate(220deg);
-  transition: 0.8s ease;
+  transition: 250ms ease;
 }
 
 .hamburger-toggler:checked + .menu-wrap > div:after {
@@ -105,7 +105,7 @@
   justify-content: center;
   flex-direction: column;
   transform: scale(0);
-  transition: all 0.4s ease;
+  transition: all 250ms ease;
   background-color: white;
 }
 

@@ -2248,6 +2248,11 @@ anymatch@^3.0.3, anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+ape-mock@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/ape-mock/-/ape-mock-0.5.5.tgz#4fe2e6ca6a2d614d42241a7240ba14dbf1dd3986"
+  integrity sha512-cWAL1YbKFdAbtE64ElYXOSHfiUwpIn9w5zGFFixI0XnrsV9N/jGm+kq1AdZ3KXs+cxEeZ6zk35ZJSnHjHa0dBQ==
+
 aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
