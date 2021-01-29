@@ -1,34 +1,43 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import useToggle from "../../hooks/useToggle";
 import "./HamburgerMenu.css";
+import { MobileMenuPopup } from "./MobileMenuPopup";
 
 export const HamburgerMenu = () => {
   const location = useLocation();
   const [checked, setChecked] = React.useState(false);
 
-  React.useEffect(() => { 
+  const [hamburgerMenuToggle, setHamburgerMenuToggle] = useToggle(false);
+
+  React.useEffect(() => {
     setChecked(false);
   }, [location]);
 
+  const changeHamburgerMenuToggle = () => {
+    setHamburgerMenuToggle(!hamburgerMenuToggle);
+  };
+
   return (
-    <button className="btn-hamburger" onClick={() => setChecked(!checked)}>
-      <div className="menu-wrap">
-        <input className="hamburger-toggler" type="checkbox" checked={checked}></input>
-        <div className="hamburger">
-          <div></div>
-        </div>
-        <div className="menu-popup">
-          <Link to="/loginPage" className="hamburger-links">
-            Log in
-          </Link>
-          <Link to="/profilePage" className="hamburger-links">
-            Profile page
-          </Link>
-          <Link to="/searchpage" className="hamburger-links">
-            Search matches
-          </Link>
-        </div>
-      </div>
-    </button>
+    <div>
+      <button
+        className="btn-hamburger"
+        onClick={() => changeHamburgerMenuToggle()}
+      >
+        {hamburgerMenuToggle ? (
+          <div className="ham-cross">✕</div>
+        ) : (
+          <div className="menu-wrap">
+            <div className="ham-line">🍔</div>
+          </div>
+        )}
+      </button>
+
+      {hamburgerMenuToggle ? (
+        <MobileMenuPopup
+          changeHamburgerMenuToggle={changeHamburgerMenuToggle}
+        />
+      ) : null}
+    </div>
   );
 };
