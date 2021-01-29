@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import useToggle from "../../hooks/useToggle";
 import "./HamburgerMenu.css";
-import { MobileMenuPopup } from "./MobileMenuPopup";
+import MobileMenuPopup from "./MobileMenuPopup";
 
 export const HamburgerMenu = () => {
   const location = useLocation();
@@ -20,10 +20,7 @@ export const HamburgerMenu = () => {
 
   return (
     <div>
-      <button
-        className="btn-hamburger"
-        onClick={() => changeHamburgerMenuToggle()}
-      >
+      <button className="btn-hamburger" onClick={changeHamburgerMenuToggle}>
         {hamburgerMenuToggle ? (
           <div className="ham-cross">✕</div>
         ) : (
@@ -34,9 +31,7 @@ export const HamburgerMenu = () => {
       </button>
 
       {hamburgerMenuToggle ? (
-        <MobileMenuPopup
-          changeHamburgerMenuToggle={changeHamburgerMenuToggle}
-        />
+        <MobileMenuPopup click={() => changeHamburgerMenuToggle()} />
       ) : null}
     </div>
   );
