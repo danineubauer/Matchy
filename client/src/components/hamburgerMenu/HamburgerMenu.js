@@ -1,18 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import useToggle from "../../hooks/useToggle";
-import "./HamburgerMenu.css";
 import MobileMenuPopup from "./MobileMenuPopup";
+import "./HamburgerMenu.css";
 
 export const HamburgerMenu = () => {
-  const location = useLocation();
-  const [checked, setChecked] = React.useState(false);
-
   const [hamburgerMenuToggle, setHamburgerMenuToggle] = useToggle(false);
-
-  React.useEffect(() => {
-    setChecked(false);
-  }, [location]);
 
   const changeHamburgerMenuToggle = () => {
     setHamburgerMenuToggle(!hamburgerMenuToggle);

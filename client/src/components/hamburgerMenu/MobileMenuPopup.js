@@ -3,17 +3,34 @@ import { Link } from "react-router-dom";
 import "./HamburgerMenu.css";
 
 const MobileMenuPopup = (props) => {
+  const menuLinks = [
+    {
+      name: "Log in",
+      directory: "/loginPage",
+    },
+    {
+      name: "Profile page",
+      directory: "/profilePage",
+    },
+    {
+      name: "Search matches",
+      directory: "/searchpage",
+    },
+  ];
+
   return (
     <div className="mobile-menu-wrap">
-      <Link to="/loginPage" className="hamburger-links" onClick={props.click}>
-        Log in
-      </Link>
-      <Link to="/profilePage" className="hamburger-links" onClick={props.click}>
-        Profile page
-      </Link>
-      <Link to="/searchpage" className="hamburger-links" onClick={props.click}>
-        Search matches
-      </Link>
+      {menuLinks.map((menuLink) => {
+        return (
+          <Link
+            to={menuLink.directory}
+            className="hamburger-links"
+            onClick={props.click}
+          >
+            {menuLink.name}
+          </Link>
+        );
+      })}
     </div>
   );
 };
