@@ -19,6 +19,7 @@ export const SearchPage = () => {
     (async () => {
       if (searchString.trim() !== "") {
         const result = await searchUserByName(searchString);
+
         console.log(result);
       }
     })();
@@ -35,7 +36,9 @@ export const SearchPage = () => {
           <input
             placeholder="Search"
             onChange={(e) => {
-              setSearchString(e.target.value);
+              setInterval(() => {
+                setSearchString(e.target.value);
+              }, 1000);
             }}
           />
 
@@ -69,7 +72,6 @@ export const SearchPage = () => {
             </button>
             <button
               className="nav-button"
-              user={user}
               onClick={() => setUserIndex(userIndex + 1)}
             >
               ✅
