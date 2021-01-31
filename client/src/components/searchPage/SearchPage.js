@@ -66,7 +66,7 @@ export const SearchPage = () => {
           <div className="nav-buttons-container">
             <button
               className="nav-button"
-              onClick={() => setUserIndex(userIndex - 1)}
+              onClick={() => setUserIndex(userIndex + 1)}
             >
               ❌
             </button>
